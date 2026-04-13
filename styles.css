@@ -226,3 +226,66 @@ footer {
     margin: 0;
   }
 }
+
+.hidden {
+  display: none;
+}
+
+.toggle-btn {
+  align-self: flex-start;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #4f46e5;
+  color: #ffffff;
+  font: inherit;
+  cursor: pointer;
+}
+
+.toggle-btn:hover {
+  background-color: #4338ca;
+}
+
+.toggle-btn:focus {
+  outline: 2px solid #111827;
+  outline-offset: 2px;
+}
+
+.project-details {
+  margin-top: 0.75rem;
+  padding: 0.9rem 1rem;
+  background-color: #f3f4f6;
+  border-left: 4px solid #6366f1;
+  border-radius: 0.5rem;
+}
+
+.filter-buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.filter-buttons button {
+  padding: 0.5rem 0.9rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #e5e7eb;
+  cursor: pointer;
+}
+
+.filter-buttons button:hover {
+  background-color: #d1d5db;
+}
+
+body.dark-mode {
+  background-color: #111827;
+  color: #f9fafb;
+}
+
+body.dark-mode section {
+  background-color: #1f2937;
+}
+
+body.dark-mode header {
+  background: #111827;
+}

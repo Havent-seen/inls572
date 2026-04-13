@@ -15,7 +15,7 @@
 <header>
   <h1>Haonian Wang</h1>
   <p>Projects & Technical Experience</p>
-
+  <button id="theme-toggle">Toggle Dark Mode</button>
 <nav aria-label="Site navigation">
   <h2>Navigation</h2>
   <ul class="nav-links">
@@ -42,45 +42,76 @@
       This page highlights some of my recent technical work in data science, analytics, and machine learning.
       Each project reflects my interest in combining technical methods with practical problem-solving.
     </p>
-
+    <p>
+      Click the button under each project to view additional details about the problem, methods, and skills used.
+    </p>
+    <div class="filter-buttons">
+      <button data-filter="all">All</button>
+      <button data-filter="nlp">NLP</button>
+      <button data-filter="modeling">Modeling</button>
+    </div>
     <div class="projects-grid">
-      <article>
-        <img class="project-img" src="covid.jpg" alt="Screenshot or illustration for COVID-19 Tweet Sentiment Analysis">
-        <div class="project-body">
-          <h3>COVID-19 Tweet Sentiment Analysis</h3>
-          <p>
-            Developed a sentiment analysis pipeline using transformer-based models for social media text.
-            The project included data preprocessing, model fine-tuning, and evaluation using standard NLP metrics.
-          </p>
-          <p>
-            <strong>Technologies:</strong> Python, Hugging Face Transformers, PyTorch
-          </p>
-          <p>
-            <a href="https://github.com/Havent-seen" target="_blank" rel="noopener">
-              View Project on GitHub
-            </a>
-          </p>
-        </div>
-      </article>
+<article data-category="nlp">
+  <img class="project-img" src="covid.jpg" alt="Screenshot or illustration for COVID-19 Tweet Sentiment Analysis">
+  <div class="project-body">
+    <h3>COVID-19 Tweet Sentiment Analysis</h3>
+    <p>
+      Developed a sentiment analysis pipeline using transformer-based models for social media text.
+    </p>
+    <p><strong>Technologies:</strong> Python, Hugging Face Transformers, PyTorch</p>
 
-      <article>
-        <img class="project-img" src="evacuation.jpg" alt="Screenshot or illustration for Evacuation Experiment Modeling">
-        <div class="project-body">
-          <h3>Evacuation Experiment Modeling</h3>
-          <p>
-            Built predictive models to analyze evacuation behavior and identify patterns in decision-making.
-            This project focused on using data-driven methods to better understand human behavior in emergency scenarios.
-          </p>
-          <p>
-            <strong>Technologies:</strong> Python, data visualization, statistical modeling
-          </p>
-          <p>
-            <a href="https://github.com/Havent-seen" target="_blank" rel="noopener">
-              View Project on GitHub
-            </a>
-          </p>
-        </div>
-      </article>
+    <button class="toggle-btn" type="button" aria-expanded="false">
+      Show project details
+    </button>
+
+    <div class="project-details hidden">
+      <p>
+        In this project, I worked on preprocessing tweet text, fine-tuning a transformer model,
+        and evaluating classification performance using standard NLP metrics.
+      </p>
+      <p>
+        This project demonstrates my interest in applied natural language processing and model evaluation.
+      </p>
+    </div>
+
+    <p>
+      <a href="https://github.com/Havent-seen" target="_blank" rel="noopener">
+        View Project on GitHub
+      </a>
+    </p>
+  </div>
+</article>
+
+<article data-category="modeling">
+  <img class="project-img" src="evacuation.jpg" alt="Screenshot or illustration for Evacuation Experiment Modeling">
+  <div class="project-body">
+    <h3>Evacuation Experiment Modeling</h3>
+    <p>
+      Built predictive models to analyze evacuation behavior and identify patterns in decision-making.
+    </p>
+    <p><strong>Technologies:</strong> Python, data visualization, statistical modeling</p>
+
+    <button class="toggle-btn" type="button" aria-expanded="false">
+      Show project details
+    </button>
+
+    <div class="project-details hidden">
+      <p>
+        This project focused on analyzing behavioral data and using modeling techniques
+        to better understand how people respond in emergency situations.
+      </p>
+      <p>
+        It reflects my interest in combining quantitative analysis with real-world problem-solving.
+      </p>
+    </div>
+
+    <p>
+      <a href="https://github.com/Havent-seen" target="_blank" rel="noopener">
+        View Project on GitHub
+      </a>
+    </p>
+  </div>
+</article>
     </div>
   </section>
 </main>
@@ -88,5 +119,6 @@
 <footer>
   <p>Last updated: <time datetime="2026-03-10">March 10, 2026</time></p>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
